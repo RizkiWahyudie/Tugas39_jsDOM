@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <!-- CONTOH LATIHAN -->
+    <!-- <p>
+      Nama : <input type="text" value="Rizki Wahyudie" /> <button onclick="tombol()">Klik</button>
+    </p>
+
+    <p id="contoh">contoh</p> -->
+
+    <button type="button" onclick="tombol()" name="button">Jalankan</button>
+        <br />
+        <br />
+        <hr />
+        <b>Active Element</b> Property : <br />
+        <p id="contoh1">contoh</p>
+        <hr />
+        <b>addEventListener()</b> Property : <br />
+        <p id="contoh2">contoh</p>
+        <hr />
+        <b>Anchor</b> Property (<a name="jeruk" href="#">Jeruk</a>
+        <a name="semangka" href="#">Semangka</a>) : <br />
+        <p id="contoh3">contoh</p>
+        <hr />
+    <script type="text/javascript">
+    // CONTOH LATIHAN
+    // ACTIVE ELEMENT
+    //   function tombol() {
+    //     var a = document.activeElement.tagName;
+    //     document.getElementById("contoh").innerHTML = a;
+    //   }
+        // ADD EVENT LISTENER
+        // document.addEventListener("click", function(){
+        //     document.getElementById("contoh").innerHTML = "Yeay, sukses merubah!";
+        // });
+            // OPEN CLOSE PROPERTY
+            // function tombol() {
+            //     document.open();
+            //     document.write("<h1>Apa bae dah yang penting oke</h1>");
+            //     document.close();
+            // }
+    
+    // TUGAS 39
+    // ACTIVE ELEMENT
+      function tombol() {
+        var activeElement = document.activeElement.tagName;
+        document.getElementById("contoh1").innerHTML = activeElement;
+        // ADD EVENT LISTENER
+        var eventListener = document.addEventListener;
+        document.getElementById("contoh2").innerHTML = "Sukses ! Merubah addEventListener()";
+            // ANCHOR PROPERTY
+            var anchor = document.anchors.length;
+            document.getElementById("contoh3").innerHTML = anchor;
+            }
+    </script>
+  </body>
+</html>
